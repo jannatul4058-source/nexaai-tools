@@ -1,244 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NexaAI Tools - AI Power Platform</title>
+<title>NexaAI Tools - Professional AI Platform</title>
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
-}
+<meta name="description" content="NexaAI Tools - AI Image, Video, Voice and Productivity Tools">
 
-body{
-  background:#f8fafc;
-  color:#111827;
-}
-
-header{
-  background:linear-gradient(135deg,#2563eb,#7c3aed);
-  color:white;
-  padding:25px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo{
-  font-size:28px;
-  font-weight:bold;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
-}
-
-.hero{
-  text-align:center;
-  padding:80px 20px;
-}
-
-.hero h1{
-  font-size:45px;
-  margin-bottom:15px;
-}
-
-.hero span{
-  color:#2563eb;
-}
-
-.hero p{
-  font-size:18px;
-  color:#475569;
-  margin-bottom:30px;
-}
-
-.btn{
-  display:inline-block;
-  background:#2563eb;
-  color:white;
-  padding:14px 30px;
-  border-radius:30px;
-  text-decoration:none;
-}
-
-.tools{
-  padding:40px 8%;
-}
-
-.tools h2{
-  text-align:center;
-  font-size:32px;
-  margin-bottom:30px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.card{
-  background:white;
-  padding:30px;
-  border-radius:20px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transition:.3s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-}
-
-.icon{
-  font-size:40px;
-}
-
-.card h3{
-  margin:15px 0;
-  color:#2563eb;
-}
-
-.card button{
-  margin-top:15px;
-  padding:10px 20px;
-  border:none;
-  background:#111827;
-  color:white;
-  border-radius:20px;
-  cursor:pointer;
-}
-
-footer{
-  margin-top:50px;
-  background:#111827;
-  color:white;
-  text-align:center;
-  padding:25px;
-}
-
-@media(max-width:600px){
-.hero h1{
-font-size:32px;
-}
-
-header{
-flex-direction:column;
-gap:15px;
-}
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
 
-<header>
 
-<div class="logo">NexaAI</div>
+<!-- Header -->
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Tools</a>
-<a href="#">About</a>
+<header class="header">
+
+<div class="logo">
+Nexa<span>AI</span>
+</div>
+
+
+<button class="menu-btn" id="menuBtn">
+☰
+</button>
+
+
+<nav id="navMenu">
+
+<a href="index.html">Home</a>
+<a href="#tools">Tools</a>
+<a href="pricing.html">Pricing</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
 </nav>
+
+
+<button id="darkModeBtn">
+🌙
+</button>
+
 
 </header>
 
 
+
+<!-- Hero Section -->
+
+
 <section class="hero">
 
-<h1>Create Faster With <span>AI Tools</span></h1>
+
+<h1>
+Powerful <span>AI Tools</span>
+<br>
+For Everyone
+</h1>
+
 
 <p>
-All-in-one AI platform for images, videos, voice, content and productivity.
+Create images, videos, voice, content and more with advanced AI technology.
 </p>
 
-<a class="btn" href="#tools">Explore Tools</a>
+
+
+<div class="search-box">
+
+<input 
+type="search"
+id="toolSearch"
+placeholder="Search AI Tools..."
+>
+
+
+</div>
+
+
+<a href="#tools" class="primary-btn">
+Explore Tools
+</a>
+
 
 </section>
 
+
+
+
+
+<!-- Categories -->
+
+
+<section class="categories">
+
+
+<h2>
+Tool Categories
+</h2>
+
+
+<div class="category-list">
+
+
+<button>
+🎨 Image AI
+</button>
+
+
+<button>
+🎬 Video AI
+</button>
+
+
+<button>
+🎤 Voice AI
+</button>
+
+
+<button>
+✍️ Writing AI
+</button>
+
+
+<button>
+📄 Productivity
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Tools Section -->
 
 
 <section class="tools" id="tools">
 
-<h2>Our AI Tools</h2>
+
+<h2>
+All AI Tools
+</h2>
 
 
-<div class="grid">
+<div class="tool-grid" id="toolGrid">
 
 
-<div class="card">
-<div class="icon">🎨</div>
-<h3>AI Image Generator</h3>
-<p>Create stunning AI generated images.</p>
+
+<div class="tool-card"
+data-name="AI Image Generator">
+
+<div class="icon">
+🎨
+</div>
+
+<h3>
+AI Image Generator
+</h3>
+
+<p>
+Generate amazing AI images instantly.
+</p>
+
 <a href="tools/image-generator.html">
-    <button>Try Now</button>
+Use Tool
 </a>
-
-
-<div class="card">
-<div class="icon">🖼️</div>
-<h3>Background Remover</h3>
-<p>Remove image background instantly.</p>
-<a href="tools/background-remover.html">
-    <button>Try Now</button>
-</a>
-
-
-<div class="card">
-<div class="icon">🎬</div>
-<h3>AI Thumbnail Generator</h3>
-<p>Create professional YouTube thumbnails.</p>
-<a href="tools/thumbnail-generator.html">
-    <button>Try Now</button>
-</a>
-
-
-<div class="card">
-<div class="icon">🎤</div>
-<h3>AI Voice Generator</h3>
-<p>Generate realistic AI voices.</p>
-<a href="tools/voice-generator.html">
-    <button>Try Now</button>
-</a>
-
-
-<div class="card">
-<div class="icon">📝</div>
-<h3>AI Script Generator</h3>
-<p>Create scripts for YouTube and blogs.</p>
-<a href="tools/script-generator.html">
-    <button>Try Now</button>
-</a>
-
-
-<div class="card">
-<div class="icon">📄</div>
-<h3>PDF AI Tools</h3>
-<p>Merge, split and manage PDF files.</p>
-<a href="tools/pdf-ai-tools.html">
-    <button>Try Now</button>
-</a>
-  
 
 </div>
+
+
+
+
+
+<div class="tool-card"
+data-name="Background Remover">
+
+<div class="icon">
+🖼️
+</div>
+
+<h3>
+AI Background Remover
+</h3>
+
+<p>
+Remove image background automatically.
+</p>
+
+<a href="tools/background-remover.html">
+Use Tool
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="tool-card"
+data-name="Thumbnail Generator">
+
+<div class="icon">
+🎬
+</div>
+
+<h3>
+AI Thumbnail Generator
+</h3>
+
+<p>
+Create professional thumbnails.
+</p>
+
+<a href="tools/thumbnail-generator.html">
+Use Tool
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="tool-card"
+data-name="Voice Generator">
+
+<div class="icon">
+🎤
+</div>
+
+<h3>
+AI Voice Generator
+</h3>
+
+<p>
+Generate realistic AI voices.
+</p>
+
+<a href="tools/voice-generator.html">
+Use Tool
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="tool-card"
+data-name="Video Subtitle Generator">
+
+<div class="icon">
+🎥
+</div>
+
+<h3>
+AI Subtitle Generator
+</h3>
+
+<p>
+Create subtitles automatically.
+</p>
+
+<a href="tools/subtitle-generator.html">
+Use Tool
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="tool-card"
+data-name="AI Script Generator">
+
+<div class="icon">
+📝
+</div>
+
+<h3>
+AI Script Generator
+</h3>
+
+<p>
+Write YouTube and blog scripts.
+</p>
+
+<a href="tools/script-generator.html">
+Use Tool
+</a>
+
+</div>
+
+
+
+
+</div>
+
 
 </section>
 
 
+
+
+
+<!-- Footer -->
+
+
 <footer>
 
-<p>© 2026 NexaAI Tools. All Rights Reserved.</p>
+
+<h3>
+NexaAI Tools
+</h3>
+
+
+<p>
+© 2026 NexaAI Tools. All Rights Reserved.
+</p>
+
 
 </footer>
 
 
+
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
